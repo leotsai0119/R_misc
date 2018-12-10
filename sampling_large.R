@@ -36,7 +36,7 @@ myData <- rbind.data.frame(d1, d2, d3, d4)
 p1 <- ggplot(myData, aes(x = V1, fill = size, alpha = .05)) + geom_histogram(binwidth = .5, position = "identity") + facet_grid(~size) + theme_classic()
 p2 <- ggplot(myData, aes(x = V1, color = size)) + geom_density() + theme_classic()
 
-#vanilla sampling with apply
+#vanilla sampling with matrix
 rm(list = ls())
 population <- iris$Sepal.Length
 #population <- 1:10000
